@@ -26,7 +26,7 @@ const SmallScreenMenu: React.FC<SmallScreenMenuProps> = ({
   return (
     <div
       id="small-screen-menu"
-      className={`fixed top-0 bottom-0 right-0 w-4/5 z-50 transition-transform duration-300 ${
+      className={`fixed top-0 bottom-0 right-0 w-4/5 h-screen z-50 transition-transform duration-300 ${
         isOpen ? "translate-x-0" : "translate-x-full"
       }`}
     >
