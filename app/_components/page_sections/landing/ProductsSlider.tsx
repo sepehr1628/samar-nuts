@@ -6,16 +6,34 @@ import "swiper/css/autoplay";
 import "swiper/css/pagination";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import Image from "next/image";
+import { IoIosArrowBack } from "react-icons/io";
 
 const ProductsSlider: React.FC = () => {
   return (
-    <section>
+    <section className="max-w-298.75 mx-auto px-3 my-10">
+      <div className="flex items-center justify-between">
+        <h2 className="text-2xl md:text-4xl text-black font-light my-5">
+          پر طرفدارترین محصولات
+        </h2>
+        <div className="flex items-center gap-2">
+          <button className="swiper-button-next-custom cursor-pointer rounded-full border border-neutral-300 aspect-square p-2 rotate-180">
+            <IoIosArrowBack size={20} />
+          </button>
+          <button className="swiper-button-prev-custom cursor-pointer rounded-full border border-neutral-300 aspect-square p-2">
+            <IoIosArrowBack size={20} />
+          </button>
+        </div>
+      </div>
       <Swiper
         modules={[Autoplay, Pagination, Navigation]}
-        navigation={true}
+        navigation={{
+          nextEl: ".swiper-button-next-custom",
+          prevEl: ".swiper-button-prev-custom",
+        }}
         autoplay={{ delay: 4000, disableOnInteraction: false }}
         pagination={{
           clickable: true,
+          bulletElement: "button",
         }}
         spaceBetween={24}
         breakpoints={{
@@ -24,7 +42,7 @@ const ProductsSlider: React.FC = () => {
           768: { slidesPerView: 4 },
         }}
         loop
-        className="max-w-298.75 p-2!"
+        className="p-2! pb-10!"
       >
         <SwiperSlide className="separator-shadow rounded-2xl">
           <Image
