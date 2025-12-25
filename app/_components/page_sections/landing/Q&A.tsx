@@ -28,7 +28,7 @@ const CommonQuestions: React.FC = function () {
       <h2 className="text-2xl md:text-4xl text-black font-light my-5">
         سوالات پرتکرار
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
         <QuestionAccordionBordered items={faqItems} />
       </div>
     </section>
