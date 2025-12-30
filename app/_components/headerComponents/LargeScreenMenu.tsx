@@ -1,4 +1,4 @@
-import { NavLink } from "../style/hooks";
+import { NavLink } from "../../_lib/hooks/hooks";
 
 const LargeScreenMenu: React.FC = () => {
   return (
