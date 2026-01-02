@@ -18,7 +18,7 @@ const PopularCategories: React.FC = () => {
               alt=""
               width={120}
               height={120}
-              className="rounded-full aspect-square w-30 xlg:w-40"
+              className="rounded-full aspect-square w-20 xlg:w-35"
             />
             <strong>آجیل خام</strong>
           </div>
@@ -28,7 +28,7 @@ const PopularCategories: React.FC = () => {
               alt=""
               width={120}
               height={120}
-              className="rounded-full aspect-square w-30 xlg:w-40"
+              className="rounded-full aspect-square w-20 xlg:w-35"
             />
             <strong>آجیل خام</strong>
           </div>
@@ -38,7 +38,7 @@ const PopularCategories: React.FC = () => {
               alt=""
               width={120}
               height={120}
-              className="rounded-full aspect-square w-30 xlg:w-40"
+              className="rounded-full aspect-square w-20 xlg:w-35"
             />
             <strong>آجیل خام</strong>
           </div>
@@ -48,7 +48,7 @@ const PopularCategories: React.FC = () => {
               alt=""
               width={120}
               height={120}
-              className="rounded-full aspect-square w-30 xlg:w-40"
+              className="rounded-full aspect-square w-20 xlg:w-35"
             />
             <strong>آجیل خام</strong>
           </div>
@@ -58,7 +58,7 @@ const PopularCategories: React.FC = () => {
               alt=""
               width={120}
               height={120}
-              className="rounded-full aspect-square w-30 xlg:w-40"
+              className="rounded-full aspect-square w-20 xlg:w-35"
             />
             <strong>آجیل خام</strong>
           </div>

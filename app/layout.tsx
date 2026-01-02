@@ -40,13 +40,13 @@ export default function RootLayout({
               |<span>Cart</span>
             </div>
           </div>
-          <nav>
+          {/* <nav>
             <SmallScreenNavigation />
-          </nav>
+          </nav> */}
         </header>
         <main className="bg-[#e8e8e8]">{children}</main>
         <footer className="bg-white flex flex-col gap-10 px-5 pt-20 md:px-16 ">
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-5 md:gap-0">
+          <div className="grid grid-cols-2 md:grid-cols-12 gap-5 md:gap-0">
             <div className="md:col-span-3 flex flex-col gap-3 [&>a]:text-neutral-500">
               <strong>خدمات مشتریان</strong>
               <Link href="/" className="mt-2">
@@ -65,16 +65,16 @@ export default function RootLayout({
               <Link href="/">لینک</Link>
               <Link href="/">لینک</Link>
             </div>
-            <div className="md:col-span-6 flex flex-col gap-5">
+            <div className="col-span-2 md:col-span-6 flex flex-col gap-5">
               <strong>با ما همراه باشید</strong>
               <p className="text-neutral-500">
                 از جدید ترین تخفیف‌ها باخبر شوید
               </p>
-              <div className="flex items-center gap-3">
+              <div className="flex items-center flex-wrap gap-3">
                 <input
                   type="text"
                   placeholder="آدرس ایمیل خودرا وارد کنید"
-                  className="flex-1 bg-neutral-200 py-2 px-2 pr-5 rounded-lg focus:outline-none"
+                  className="flex-1 bg-neutral-200 p-2 pr-5 max-w-100 rounded-lg focus:outline-none"
                 />
                 <button className="px-6 bg-neutral-400 py-2 rounded-lg">
                   ثبت

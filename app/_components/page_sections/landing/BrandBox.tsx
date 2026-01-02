@@ -3,12 +3,12 @@ import { FaShoppingCart } from "react-icons/fa";
 
 const BrandBox: React.FC = () => {
   return (
-    <section className="flex items-center justify-center flex-wrap gap-20 p-10 pb-15">
-      <div>
+    <section className="lg:row-span-2 grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5 order-3 lg:order-2">
+      <div className="flex flex-col">
         <Image
           src="/images/poster-1.jpg"
           alt=""
-          className="w-60 h-55 rounded-t-2xl"
+          className="w-full aspect-square rounded-t-2xl"
           width={200}
           height={200}
         />
@@ -24,11 +24,11 @@ const BrandBox: React.FC = () => {
           </button>
         </div>
       </div>
-      <div>
+      <div className="flex flex-col">
         <Image
           src="/images/poster-3.jpg"
           alt=""
-          className="w-60 h-55 rounded-t-2xl"
+          className="w-full aspect-square rounded-t-2xl"
           width={200}
           height={200}
         />
@@ -44,11 +44,11 @@ const BrandBox: React.FC = () => {
           </button>
         </div>
       </div>
-      <div>
+      <div className="flex flex-col">
         <Image
           src="/images/poster-2.jpg"
           alt=""
-          className="w-60 h-55 rounded-t-2xl"
+          className="w-full aspect-square rounded-t-2xl"
           width={200}
           height={200}
         />
@@ -64,11 +64,11 @@ const BrandBox: React.FC = () => {
           </button>
         </div>
       </div>
-      <div>
+      <div className="flex flex-col">
         <Image
           src="/images/poster-4.jpg"
           alt=""
-          className="w-60 h-55 rounded-t-2xl"
+          className="w-full aspect-square rounded-t-2xl"
           width={200}
           height={200}
         />
@@ -84,11 +84,11 @@ const BrandBox: React.FC = () => {
           </button>
         </div>
       </div>
-      <div>
+      <div className="flex flex-col">
         <Image
           src="/images/poster-5.jpg"
           alt=""
-          className="w-60 h-55 rounded-t-2xl"
+          className="w-full aspect-square rounded-t-2xl"
           width={200}
           height={200}
         />
