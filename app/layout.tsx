@@ -29,20 +29,21 @@ export default function RootLayout({
     <html data-scroll-behavior="smooth" lang="fa">
       <body dir="rtl" className={`${iranSansX.className} overflow-x-hidden`}>
         <header className="flex flex-col gap-2 p-5 md:px-16 max-w-450 mx-auto">
-          <div className="flex items-center justify-between border-b border-neutral-200">
+          <div className="flex items-center justify-between pb-2 border-b border-neutral-200">
             <div className="flex items-center gap-5">
-              <Image src="/images/" alt="" width={50} height={50} />
+              {/* <Image src="/images/" alt="" width={50} height={50} /> */}
+              <nav>
+                <SmallScreenNavigation />
+              </nav>
+              فروشگاه سمر
             </div>
             <div className="flex items-center gap-5">
-              <button className="text-neutral-500 text-sm rounded-lg px-3 py-2 border border-neutral-200">
+              <button className="text-neutral-500 text-xs md:text-sm rounded-lg px-3 py-2 border border-neutral-200">
                 ورود | ثبت‌‌نام
               </button>
-              |<span>Cart</span>
+              <span className="hidden md:block">Cart</span>
             </div>
           </div>
-          {/* <nav>
-            <SmallScreenNavigation />
-          </nav> */}
         </header>
         <main className="bg-[#e8e8e8]">{children}</main>
         <footer className="bg-white flex flex-col gap-10 px-5 pt-20 md:px-16 ">

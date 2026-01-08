@@ -1,7 +1,6 @@
 @import "tailwindcss";
 @config "../tailwind.config.ts";
 
-
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -26,8 +25,23 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .separator-shadow {
   box-shadow: 0 0 3px 0 rgba(137, 137, 137, 0.75);
   -webkit-box-shadow: 0 0 3px 0 rgba(137, 137, 137, 0.75);
   -moz-box-shadow: 0 0 3px 0 rgba(137, 137, 137, 0.75);
+}
+
+.tea {
+  background-image: url("/images/tea-poster.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rice {
+  background-image: url("/images/rice.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
